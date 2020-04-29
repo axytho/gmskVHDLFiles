@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/difference_and_invert_tb_isim_beh.exe" -prj "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/difference_and_invert_tb_beh.prj" "work.difference_and_invert_tb" 
+-intstyle "ise" -incremental -o "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/full_simulation_tb_isim_beh.exe" -prj "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/full_simulation_tb_beh.prj" "work.full_simulation_tb" 

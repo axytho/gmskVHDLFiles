@@ -1,5 +1,5 @@
 ISim log file
-Running: /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/difference_and_invert_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/difference_and_invert_tb_isim_beh.wdb 
+Running: /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/full_simulation_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/full_simulation_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -8,11 +8,4 @@ Time resolution is 1 ps
 # run 400 ms
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 2650690 ns : File "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/difference_and_invert.vhd" Line 51
-ISim P.20131013 (signature 0xfbc00daa)
-This is a Full version of ISim.
-# run 400 ms
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 2167875 ns : File "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/difference_and_invert.vhd" Line 52
-# exit 0
+Stopped at time : 16910495 ns : File "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/low_pass_filter_22.vhd" Line 125

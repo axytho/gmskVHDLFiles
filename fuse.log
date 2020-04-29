@@ -1,24 +1,31 @@
-Running: /esat/micas-data/software/xilinx_ise_14.7/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/difference_and_invert_tb_isim_beh.exe" -prj "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/difference_and_invert_tb_beh.prj" "work.difference_and_invert_tb" 
+Running: /esat/micas-data/software/xilinx_ise_14.7/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/full_simulation_tb_isim_beh.exe -prj /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/full_simulation_tb_beh.prj work.full_simulation_tb 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
+Parsing VHDL file "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/atan_cordic.vhd" into library work
+Parsing VHDL file "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/rising_edge.vhd" into library work
+Parsing VHDL file "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/low_pass_filter_22.vhd" into library work
 Parsing VHDL file "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/difference_and_invert.vhd" into library work
-Parsing VHDL file "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/difference_and_invert_tb.vhd" into library work
+Parsing VHDL file "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/atan_cordic_full_circle.vhd" into library work
+Parsing VHDL file "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/full_simulation_tb.vhd" into library work
 Starting static elaboration
-WARNING:HDLCompiler:960 - "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/difference_and_invert.vhd" Line 62: Expression has incompatible type
 Completed static elaboration
-Fuse Memory Usage: 96728 KB
-Fuse CPU Usage: 1620 ms
+Fuse Memory Usage: 97532 KB
+Fuse CPU Usage: 1630 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
+Compiling architecture behavioral of entity low_pass_filter_22 [low_pass_filter_22_default]
+Compiling architecture behavioral of entity atan_cordic [atan_cordic_default]
+Compiling architecture behavioral of entity atan_cordic_full_circle [atan_cordic_full_circle_default]
+Compiling architecture behavioral of entity rising_edge_block [rising_edge_block_default]
 Compiling architecture behavioral of entity difference_and_invert [difference_and_invert_default]
-Compiling architecture behavior of entity difference_and_invert_tb
+Compiling architecture behavior of entity full_simulation_tb
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 6 VHDL Units
-Built simulation executable /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/difference_and_invert_tb_isim_beh.exe
-Fuse Memory Usage: 1192596 KB
-Fuse CPU Usage: 1750 ms
-GCC CPU Usage: 260 ms
+Compiled 14 VHDL Units
+Built simulation executable /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/full_simulation_tb_isim_beh.exe
+Fuse Memory Usage: 1194444 KB
+Fuse CPU Usage: 1910 ms
+GCC CPU Usage: 2370 ms

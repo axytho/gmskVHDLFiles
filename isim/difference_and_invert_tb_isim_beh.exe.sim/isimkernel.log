@@ -2,12 +2,12 @@ Command line:
    difference_and_invert_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  52301
+     -socket  35586
 
-Wed Apr 29 12:50:06 2020
+Wed Apr 29 13:05:01 2020
 
 
- Elaboration Time: 0.05 sec
+ Elaboration Time: 0.03 sec
 
  Current Memory Usage: 267.94 Meg
 
@@ -20,9 +20,9 @@ Wed Apr 29 12:50:06 2020
  Total Traceable Variables  : 14
  Total Scalar Nets and Variables : 541
 
- Total Simulation Time: 2.08 sec
+ Total Simulation Time: 1.2 sec
 
  Current Memory Usage: 343.437 Meg
 
-Wed Apr 29 12:51:28 2020
+Wed Apr 29 13:20:00 2020
 

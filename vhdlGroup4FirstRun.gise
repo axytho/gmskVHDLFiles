@@ -24,11 +24,11 @@
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="atan_cordic_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="atan_cordic_tb_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="difference_and_invert_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="difference_and_invert_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="difference_and_invert_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="difference_and_invert_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="full_simulation_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="full_simulation_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="full_simulation_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="full_simulation_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
@@ -45,7 +45,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1588157476" xil_pn:in_ck="-6528318724360417510" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1588157476">
+    <transform xil_pn:end_ts="1588159569" xil_pn:in_ck="-6528318724360417510" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1588159569">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="atan_cordic.vhd"/>
@@ -71,11 +71,11 @@
       <outfile xil_pn:name="waveform_tb.vhd"/>
       <outfile xil_pn:name="waveform_writer.v"/>
     </transform>
-    <transform xil_pn:end_ts="1588153184" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4136097608258067999" xil_pn:start_ts="1588153184">
+    <transform xil_pn:end_ts="1588159574" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2268583158120768446" xil_pn:start_ts="1588159574">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1588153184" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2101291416522698209" xil_pn:start_ts="1588153184">
+    <transform xil_pn:end_ts="1588159574" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3313796491357693636" xil_pn:start_ts="1588159574">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -83,13 +83,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1588157303" xil_pn:in_ck="-6528318724360417510" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1588157303">
+    <transform xil_pn:end_ts="1588159574" xil_pn:in_ck="-6528318724360417510" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1588159574">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="atan_cordic.vhd"/>
       <outfile xil_pn:name="atan_cordic_full_circle.vhd"/>
       <outfile xil_pn:name="atan_cordic_tb.vhd"/>
@@ -113,28 +109,22 @@
       <outfile xil_pn:name="waveform_tb.vhd"/>
       <outfile xil_pn:name="waveform_writer.v"/>
     </transform>
-    <transform xil_pn:end_ts="1588157307" xil_pn:in_ck="-6528318724360417510" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1147618408794751488" xil_pn:start_ts="1588157303">
+    <transform xil_pn:end_ts="1588159578" xil_pn:in_ck="-6528318724360417510" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="601828250928647718" xil_pn:start_ts="1588159574">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="difference_and_invert_tb_beh.prj"/>
-      <outfile xil_pn:name="difference_and_invert_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="full_simulation_tb_beh.prj"/>
+      <outfile xil_pn:name="full_simulation_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1588157307" xil_pn:in_ck="2768864412922418151" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1192936678609051615" xil_pn:start_ts="1588157307">
+    <transform xil_pn:end_ts="1588159579" xil_pn:in_ck="2768864412922418151" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3165766903502300197" xil_pn:start_ts="1588159578">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="difference_and_invert_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="full_simulation_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>

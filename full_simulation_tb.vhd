@@ -63,7 +63,10 @@ ARCHITECTURE behavior OF full_simulation_tb IS
    signal done_I : std_logic;
 	signal done_Q : std_logic;
 	signal done_arctan : std_logic;
+	signal done_diff : std_logic;
+	signal start_diff : std_logic;
 	signal angle_out : signed(7 downto 0);
+	signal output_diff : signed(7 downto 0);
 	
 
    -- Clock period definitions
@@ -101,6 +104,21 @@ BEGIN
 	    clk => clk,
 		 signal_in => done_I,
 		 rising_edge_signal => start_atan
+	);
+	
+	rising_edge_to_diff: entity work.rising_edge_block port map(
+	    clk => clk,
+		 signal_in => done_arctan,
+		 rising_edge_signal => start_diff
+	);
+	
+	diff: entity work.difference_and_invert port map(
+	       clk => clk,
+          inputValue => angle_out,
+          newValue => start_diff,
+          outputValue => output_diff,
+          doneFull => done_diff
+	
 	);
 
    -- Clock process definitions
