@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="vhdlGroup4FirstRun.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="atan_cordic_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="atan_cordic_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="difference_and_invert_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="difference_and_invert_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="difference_and_invert_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="difference_and_invert_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="full_simulation_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="full_simulation_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="rising_edge_block_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="rising_edge_block_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="waveform_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1588060931" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1588060931">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588157476" xil_pn:in_ck="-6528318724360417510" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1588157476">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="atan_cordic.vhd"/>
+      <outfile xil_pn:name="atan_cordic_full_circle.vhd"/>
+      <outfile xil_pn:name="atan_cordic_tb.vhd"/>
+      <outfile xil_pn:name="clock_generator.vhd"/>
+      <outfile xil_pn:name="debouncer.vhd"/>
+      <outfile xil_pn:name="debouncer_tb.vhd"/>
+      <outfile xil_pn:name="difference_and_invert.vhd"/>
+      <outfile xil_pn:name="difference_and_invert_tb.vhd"/>
+      <outfile xil_pn:name="display_driver.vhd"/>
+      <outfile xil_pn:name="full_simulation_tb.vhd"/>
+      <outfile xil_pn:name="hann_filter.vhd"/>
+      <outfile xil_pn:name="hann_filter_tb.vhd"/>
+      <outfile xil_pn:name="help.vhd"/>
+      <outfile xil_pn:name="low_pass_filter_22.vhd"/>
+      <outfile xil_pn:name="rising_edge.vhd"/>
+      <outfile xil_pn:name="toplevel.vhd"/>
+      <outfile xil_pn:name="uart_transmitter.vhd"/>
+      <outfile xil_pn:name="varicode_decoder.vhd"/>
+      <outfile xil_pn:name="varicode_decoder_tb.vhd"/>
+      <outfile xil_pn:name="waveform_reader.v"/>
+      <outfile xil_pn:name="waveform_tb.vhd"/>
+      <outfile xil_pn:name="waveform_writer.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1588153184" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4136097608258067999" xil_pn:start_ts="1588153184">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588153184" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2101291416522698209" xil_pn:start_ts="1588153184">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588060951" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="9135896310688668530" xil_pn:start_ts="1588060951">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588157303" xil_pn:in_ck="-6528318724360417510" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1588157303">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="atan_cordic.vhd"/>
+      <outfile xil_pn:name="atan_cordic_full_circle.vhd"/>
+      <outfile xil_pn:name="atan_cordic_tb.vhd"/>
+      <outfile xil_pn:name="clock_generator.vhd"/>
+      <outfile xil_pn:name="debouncer.vhd"/>
+      <outfile xil_pn:name="debouncer_tb.vhd"/>
+      <outfile xil_pn:name="difference_and_invert.vhd"/>
+      <outfile xil_pn:name="difference_and_invert_tb.vhd"/>
+      <outfile xil_pn:name="display_driver.vhd"/>
+      <outfile xil_pn:name="full_simulation_tb.vhd"/>
+      <outfile xil_pn:name="hann_filter.vhd"/>
+      <outfile xil_pn:name="hann_filter_tb.vhd"/>
+      <outfile xil_pn:name="help.vhd"/>
+      <outfile xil_pn:name="low_pass_filter_22.vhd"/>
+      <outfile xil_pn:name="rising_edge.vhd"/>
+      <outfile xil_pn:name="toplevel.vhd"/>
+      <outfile xil_pn:name="uart_transmitter.vhd"/>
+      <outfile xil_pn:name="varicode_decoder.vhd"/>
+      <outfile xil_pn:name="varicode_decoder_tb.vhd"/>
+      <outfile xil_pn:name="waveform_reader.v"/>
+      <outfile xil_pn:name="waveform_tb.vhd"/>
+      <outfile xil_pn:name="waveform_writer.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1588157307" xil_pn:in_ck="-6528318724360417510" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1147618408794751488" xil_pn:start_ts="1588157303">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="difference_and_invert_tb_beh.prj"/>
+      <outfile xil_pn:name="difference_and_invert_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1588157307" xil_pn:in_ck="2768864412922418151" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1192936678609051615" xil_pn:start_ts="1588157307">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="difference_and_invert_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+  </transforms>
+
+</generated_project>

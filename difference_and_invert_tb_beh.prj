@@ -1,0 +1,2 @@
+vhdl work "difference_and_invert.vhd"
+vhdl work "difference_and_invert_tb.vhd"

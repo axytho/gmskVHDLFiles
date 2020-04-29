@@ -1,0 +1,10 @@
+EN uart_transmitter NULL /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/uart_transmitter.vhd sub00/vhpl04 1585683876
+AR display_driver bhv /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/display_driver.vhd sub00/vhpl07 1585683879
+EN clock_generator NULL /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/clock_generator.vhd sub00/vhpl00 1585683872
+EN display_driver NULL /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/display_driver.vhd sub00/vhpl06 1585683878
+AR clock_generator bhv /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/clock_generator.vhd sub00/vhpl01 1585683873
+EN toplevel NULL /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/toplevel.vhd sub00/vhpl08 1585683880
+AR toplevel bhv /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/toplevel.vhd sub00/vhpl09 1585683881
+AR debouncer bhv /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/debouncer.vhd sub00/vhpl03 1585683875
+AR uart_transmitter bhv /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/uart_transmitter.vhd sub00/vhpl05 1585683877
+EN debouncer NULL /users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/debouncer.vhd sub00/vhpl02 1585683874

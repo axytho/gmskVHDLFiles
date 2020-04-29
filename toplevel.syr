@@ -1,0 +1,386 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+Reading design: toplevel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "toplevel.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "toplevel"
+Output Format                      : NGC
+Target Device                      : xc3s250e-5-vq100
+
+---- Source Options
+Top Module Name                    : toplevel
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/clock_generator.vhd" in Library work.
+Architecture bhv of Entity clock_generator is up to date.
+Compiling vhdl file "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/debouncer.vhd" in Library work.
+Architecture bhv of Entity debouncer is up to date.
+Compiling vhdl file "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/uart_transmitter.vhd" in Library work.
+Architecture bhv of Entity uart_transmitter is up to date.
+Compiling vhdl file "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/display_driver.vhd" in Library work.
+Architecture bhv of Entity display_driver is up to date.
+Compiling vhdl file "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/toplevel.vhd" in Library work.
+Architecture bhv of Entity toplevel is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <toplevel> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <clock_generator> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <debouncer> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <uart_transmitter> in library <work> (architecture <bhv>).
+
+Analyzing hierarchy for entity <display_driver> in library <work> (architecture <bhv>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <toplevel> in library <work> (Architecture <bhv>).
+WARNING:Xst:790 - "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/toplevel.vhd" line 126: Index value(s) does not match array range, simulation mismatch.
+Entity <toplevel> analyzed. Unit <toplevel> generated.
+
+Analyzing Entity <clock_generator> in library <work> (Architecture <bhv>).
+Entity <clock_generator> analyzed. Unit <clock_generator> generated.
+
+Analyzing Entity <debouncer> in library <work> (Architecture <bhv>).
+Entity <debouncer> analyzed. Unit <debouncer> generated.
+
+Analyzing Entity <uart_transmitter> in library <work> (Architecture <bhv>).
+Entity <uart_transmitter> analyzed. Unit <uart_transmitter> generated.
+
+Analyzing Entity <display_driver> in library <work> (Architecture <bhv>).
+Entity <display_driver> analyzed. Unit <display_driver> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <debouncer>.
+    Related source file is "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/debouncer.vhd".
+    Found 20-bit up counter for signal <counter>.
+    Found 1-bit xor2 for signal <counter$xor0000> created at line 25.
+    Found 1-bit register for signal <reg>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <debouncer> synthesized.
+
+
+Synthesizing Unit <uart_transmitter>.
+    Related source file is "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/uart_transmitter.vhd".
+    Found 2048x8-bit dual-port RAM <Mram_data_buffer> for signal <data_buffer>.
+    Found 4-bit up counter for signal <bit_counter>.
+    Found 8-bit up counter for signal <cycle_counter>.
+    Found 11-bit comparator not equal for signal <cycle_counter$cmp_ne0000> created at line 64.
+    Found 8-bit register for signal <data_buffer_in>.
+    Found 8-bit register for signal <data_buffer_out>.
+    Found 1-bit register for signal <data_bypass_enable>.
+    Found 11-bit up counter for signal <read_pos>.
+    Found 9-bit register for signal <shiftreg>.
+    Found 11-bit comparator equal for signal <shiftreg_0$cmp_eq0000> created at line 64.
+    Found 11-bit up counter for signal <write_pos>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 Counter(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <uart_transmitter> synthesized.
+
+
+Synthesizing Unit <display_driver>.
+    Related source file is "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/display_driver.vhd".
+    Found 64x7-bit ROM for signal <display_segments_reg$rom0000> created at line 77.
+    Found 4x4-bit ROM for signal <display_digits_reg$mux0000> created at line 76.
+    Found 6-bit 4-to-1 multiplexer for signal <$n0001> created at line 67.
+    Found 14-bit up counter for signal <counter>.
+    Found 2-bit up counter for signal <digit>.
+    Found 4-bit register for signal <display_digits_reg>.
+    Found 7-bit register for signal <display_segments_reg>.
+    Summary:
+	inferred   2 ROM(s).
+	inferred   2 Counter(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <display_driver> synthesized.
+
+
+Synthesizing Unit <clock_generator>.
+    Related source file is "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/clock_generator.vhd".
+    Found 4-bit register for signal <enable>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <clock_generator> synthesized.
+
+
+Synthesizing Unit <toplevel>.
+    Related source file is "/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/toplevel.vhd".
+WARNING:Xst:647 - Input <uart_rx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <test_value> is used but never assigned. This sourceless signal will be automatically connected to value 0011000000111001.
+    Found 16x8-bit ROM for signal <uart_transmitter_data$rom0000> created at line 126.
+    Found 16x8-bit ROM for signal <uart_transmitter_data$rom0001> created at line 128.
+    Found 16x8-bit ROM for signal <uart_transmitter_data$rom0002> created at line 129.
+    Found 16x8-bit ROM for signal <uart_transmitter_data$rom0003> created at line 131.
+    Found 16x8-bit ROM for signal <uart_transmitter_data$rom0004> created at line 132.
+    Found 16x8-bit ROM for signal <uart_transmitter_data$rom0005> created at line 133.
+    Found 16x8-bit ROM for signal <uart_transmitter_data$rom0006> created at line 134.
+    Found 8-bit register for signal <test_leds>.
+    Found 1-bit register for signal <display_colon>.
+    Found 6-bit register for signal <analog_gain>.
+    Found 6-bit register for signal <analog_comp_d>.
+    Found 6-bit register for signal <analog_comp_dd>.
+    Found 21-bit up counter for signal <counter1>.
+    Found 16-bit up counter for signal <counter2>.
+    Found 6-bit register for signal <display_value0>.
+    Found 6-bit register for signal <display_value1>.
+    Found 6-bit register for signal <display_value2>.
+    Found 6-bit register for signal <display_value3>.
+    Found 4-bit register for signal <test_buttons_d>.
+    Found 4-bit register for signal <test_buttons_dd>.
+    Found 4-bit register for signal <test_switches_d>.
+    Found 4-bit register for signal <test_switches_dd>.
+    Found 8-bit register for signal <uart_transmitter_data>.
+    Found 1-bit register for signal <uart_transmitter_push>.
+    Found 21-bit comparator lessequal for signal <uart_transmitter_push$cmp_le0000> created at line 124.
+    Summary:
+	inferred   7 ROM(s).
+	inferred   2 Counter(s).
+	inferred  76 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <toplevel> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 2048x8-bit dual-port RAM                              : 1
+# ROMs                                                 : 9
+ 16x8-bit ROM                                          : 7
+ 4x4-bit ROM                                           : 1
+ 64x7-bit ROM                                          : 1
+# Counters                                             : 16
+ 11-bit up counter                                     : 2
+ 14-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 20-bit up counter                                     : 8
+ 21-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 48
+ 1-bit register                                        : 32
+ 4-bit register                                        : 5
+ 6-bit register                                        : 7
+ 7-bit register                                        : 1
+ 8-bit register                                        : 3
+# Comparators                                          : 3
+ 11-bit comparator equal                               : 1
+ 11-bit comparator not equal                           : 1
+ 21-bit comparator lessequal                           : 1
+# Multiplexers                                         : 1
+ 6-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 8
+ 1-bit xor2                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch enable_0 hinder the constant cleaning in the block clock_generator.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1710 - FF/Latch <display_value0_4> (without init value) has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_value1_4> (without init value) has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_value2_4> (without init value) has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_value3_3> (without init value) has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_value3_4> (without init value) has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <display_driver>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_display_segments_reg_rom0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_display_digits_reg_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <display_driver> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart_transmitter>.
+INFO:Xst:3226 - The RAM <Mram_data_buffer> will be implemented as a BLOCK RAM, absorbing the following register(s): <data_buffer_out>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <push>          | high     |
+    |     addrA          | connected to signal <write_pos>     |          |
+    |     diA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     addrB          | connected to signal <read_pos>      |          |
+    |     doB            | connected to signal <data_buffer_out> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <uart_transmitter> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 2048x8-bit dual-port block RAM                        : 1
+# ROMs                                                 : 9
+ 16x8-bit ROM                                          : 7
+ 4x4-bit ROM                                           : 1
+ 64x7-bit ROM                                          : 1
+# Counters                                             : 16
+ 11-bit up counter                                     : 2
+ 14-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 20-bit up counter                                     : 8
+ 21-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 117
+ Flip-Flops                                            : 117
+# Comparators                                          : 3
+ 11-bit comparator equal                               : 1
+ 11-bit comparator not equal                           : 1
+ 21-bit comparator lessequal                           : 1
+# Multiplexers                                         : 1
+ 6-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 8
+ 1-bit xor2                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch enable_0 hinder the constant cleaning in the block clock_generator.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1710 - FF/Latch <display_value0_4> (without init value) has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_value3_3> (without init value) has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_value3_4> (without init value) has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_value1_4> (without init value) has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_value2_4> (without init value) has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <analog_gain_0> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <analog_gain_1> 
+INFO:Xst:2261 - The FF/Latch <display_value0_5> in Unit <toplevel> is equivalent to the following 3 FFs/Latches, which will be removed : <display_value3_5> <display_value1_5> <display_value2_5> 
+INFO:Xst:2261 - The FF/Latch <analog_gain_2> in Unit <toplevel> is equivalent to the following 3 FFs/Latches, which will be removed : <analog_gain_3> <analog_gain_4> <analog_gain_5> 
+INFO:Xst:2146 - In block <toplevel>, ROM <Mrom_uart_transmitter_data_rom0003> <Mrom_uart_transmitter_data_rom0005> are equivalent, XST will keep only <Mrom_uart_transmitter_data_rom0003>.
+WARNING:Xst:1293 - FF/Latch <uart_transmitter_data_7> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <toplevel> ...
+
+Optimizing unit <uart_transmitter> ...
+
+Optimizing unit <display_driver> ...

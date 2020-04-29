@@ -1,0 +1,3 @@
+vhdl isim_temp "atan_cordic.vhd"
+vhdl isim_temp "atan_cordic_full_circle.vhd"
+vhdl isim_temp "atan_cordic_tb.vhd"

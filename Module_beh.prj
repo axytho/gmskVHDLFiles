@@ -1,0 +1,3 @@
+vhdl work "atan_cordic.vhd"
+vhdl work "atan_cordic_full_circle.vhd"
+vhdl work "atan_cordic_tb.vhd"

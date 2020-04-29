@@ -1,0 +1,5 @@
+vhdl work "uart_transmitter.vhd"
+vhdl work "display_driver.vhd"
+vhdl work "debouncer.vhd"
+vhdl work "clock_generator.vhd"
+vhdl work "toplevel.vhd"

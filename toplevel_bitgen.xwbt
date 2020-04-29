@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/toplevel.ncd
+OUTFILE=/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/toplevel.bit
+FAMILY=Spartan3E
+PART=xc3s250e-4tq144
+WORKINGDIR=/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun
+LICENSE=ISE
+USER_INFO=211253938_177879426_210718070_762

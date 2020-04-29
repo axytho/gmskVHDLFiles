@@ -1,0 +1,242 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Mar 31 16:56:16 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "test_buttons<0>" LOCATE = SITE "P107" LEVEL 1;
+COMP "test_buttons<1>" LOCATE = SITE "P101" LEVEL 1;
+COMP "test_buttons<2>" LOCATE = SITE "P95" LEVEL 1;
+COMP "test_buttons<3>" LOCATE = SITE "P89" LEVEL 1;
+COMP "analog_gain<0>" LOCATE = SITE "P14" LEVEL 1;
+COMP "analog_gain<1>" LOCATE = SITE "P16" LEVEL 1;
+COMP "analog_gain<2>" LOCATE = SITE "P20" LEVEL 1;
+COMP "analog_gain<3>" LOCATE = SITE "P15" LEVEL 1;
+COMP "analog_gain<4>" LOCATE = SITE "P17" LEVEL 1;
+COMP "analog_gain<5>" LOCATE = SITE "P21" LEVEL 1;
+COMP "analog_comp<0>" LOCATE = SITE "P96" LEVEL 1;
+COMP "analog_comp<1>" LOCATE = SITE "P104" LEVEL 1;
+COMP "analog_comp<2>" LOCATE = SITE "P98" LEVEL 1;
+COMP "analog_comp<3>" LOCATE = SITE "P97" LEVEL 1;
+COMP "analog_comp<4>" LOCATE = SITE "P105" LEVEL 1;
+COMP "analog_comp<5>" LOCATE = SITE "P103" LEVEL 1;
+COMP "display_digits<0>" LOCATE = SITE "P33" LEVEL 1;
+COMP "display_digits<1>" LOCATE = SITE "P31" LEVEL 1;
+COMP "display_digits<2>" LOCATE = SITE "P25" LEVEL 1;
+COMP "display_digits<3>" LOCATE = SITE "P22" LEVEL 1;
+COMP "uart_cts_bar" LOCATE = SITE "P10" LEVEL 1;
+COMP "display_colon" LOCATE = SITE "P76" LEVEL 1;
+COMP "display_segments<0>" LOCATE = SITE "P74" LEVEL 1;
+COMP "display_segments<1>" LOCATE = SITE "P68" LEVEL 1;
+COMP "display_segments<2>" LOCATE = SITE "P39" LEVEL 1;
+COMP "display_segments<3>" LOCATE = SITE "P34" LEVEL 1;
+COMP "display_segments<4>" LOCATE = SITE "P32" LEVEL 1;
+COMP "display_segments<5>" LOCATE = SITE "P26" LEVEL 1;
+COMP "display_segments<6>" LOCATE = SITE "P23" LEVEL 1;
+COMP "clk_ext" LOCATE = SITE "P125" LEVEL 1;
+COMP "uart_rts_bar" LOCATE = SITE "P3" LEVEL 1;
+COMP "uart_rx" LOCATE = SITE "P6" LEVEL 1;
+COMP "uart_tx" LOCATE = SITE "P2" LEVEL 1;
+COMP "test_leds<0>" LOCATE = SITE "P140" LEVEL 1;
+COMP "test_leds<1>" LOCATE = SITE "P139" LEVEL 1;
+COMP "test_leds<2>" LOCATE = SITE "P135" LEVEL 1;
+COMP "test_leds<3>" LOCATE = SITE "P134" LEVEL 1;
+COMP "test_leds<4>" LOCATE = SITE "P132" LEVEL 1;
+COMP "test_leds<5>" LOCATE = SITE "P131" LEVEL 1;
+COMP "test_leds<6>" LOCATE = SITE "P130" LEVEL 1;
+COMP "test_leds<7>" LOCATE = SITE "P124" LEVEL 1;
+COMP "test_switches<0>" LOCATE = SITE "P84" LEVEL 1;
+COMP "test_switches<1>" LOCATE = SITE "P78" LEVEL 1;
+COMP "test_switches<2>" LOCATE = SITE "P69" LEVEL 1;
+COMP "test_switches<3>" LOCATE = SITE "P56" LEVEL 1;
+NET "clk_ext_IBUFG" BEL "clock_generator/bufgce_clk/BUFGMUX.GCLKMUX"
+        USELOCALCONNECT;
+PIN uart_transmitter0/Mram_data_buffer.A_pins<12> = BEL
+        "uart_transmitter0/Mram_data_buffer.A" PINNAME CLKA;
+PIN uart_transmitter0/Mram_data_buffer.B_pins<12> = BEL
+        "uart_transmitter0/Mram_data_buffer.B" PINNAME CLKB;
+TIMEGRP clk_ext = BEL "uart_transmitter_push" BEL "analog_gain_2" BEL
+        "uart_transmitter_data_0" BEL "uart_transmitter_data_2" BEL
+        "uart_transmitter_data_4" BEL "uart_transmitter_data_5" BEL
+        "uart_transmitter_data_6" BEL "display_value0_1" BEL
+        "display_value0_5" BEL "display_value3_1" BEL "display_value1_1" BEL
+        "display_value2_1" BEL "display_colon" BEL "test_leds_0" BEL
+        "test_leds_1" BEL "test_leds_4" BEL "test_leds_2" BEL "test_leds_3"
+        BEL "test_leds_5" BEL "test_leds_6" BEL "test_leds_7" BEL
+        "deb_button3/reg" BEL "deb_button2/reg" BEL "deb_button1/reg" BEL
+        "deb_button0/reg" BEL "deb_switch3/reg" BEL "deb_switch2/reg" BEL
+        "deb_switch1/reg" BEL "deb_switch0/reg" BEL "counter1_0" BEL
+        "counter1_1" BEL "counter1_2" BEL "counter1_3" BEL "counter1_4" BEL
+        "counter1_5" BEL "counter1_6" BEL "counter1_7" BEL "counter1_8" BEL
+        "counter1_9" BEL "counter1_10" BEL "counter1_11" BEL "counter1_12" BEL
+        "counter1_13" BEL "counter1_14" BEL "counter1_15" BEL "counter1_16"
+        BEL "counter1_17" BEL "counter1_18" BEL "counter1_19" BEL
+        "counter1_20" BEL "counter2_0" BEL "counter2_1" BEL "counter2_2" BEL
+        "counter2_3" BEL "counter2_4" BEL "counter2_5" BEL "counter2_6" BEL
+        "counter2_7" BEL "counter2_8" BEL "counter2_9" BEL "counter2_10" BEL
+        "counter2_11" BEL "counter2_12" BEL "counter2_13" BEL "counter2_14"
+        BEL "counter2_15" BEL "deb_button3/counter_0" BEL
+        "deb_button3/counter_1" BEL "deb_button3/counter_2" BEL
+        "deb_button3/counter_3" BEL "deb_button3/counter_4" BEL
+        "deb_button3/counter_5" BEL "deb_button3/counter_6" BEL
+        "deb_button3/counter_7" BEL "deb_button3/counter_8" BEL
+        "deb_button3/counter_9" BEL "deb_button3/counter_10" BEL
+        "deb_button3/counter_11" BEL "deb_button3/counter_12" BEL
+        "deb_button3/counter_13" BEL "deb_button3/counter_14" BEL
+        "deb_button3/counter_15" BEL "deb_button3/counter_16" BEL
+        "deb_button3/counter_17" BEL "deb_button3/counter_18" BEL
+        "deb_button3/counter_19" BEL "deb_button2/counter_0" BEL
+        "deb_button2/counter_1" BEL "deb_button2/counter_2" BEL
+        "deb_button2/counter_3" BEL "deb_button2/counter_4" BEL
+        "deb_button2/counter_5" BEL "deb_button2/counter_6" BEL
+        "deb_button2/counter_7" BEL "deb_button2/counter_8" BEL
+        "deb_button2/counter_9" BEL "deb_button2/counter_10" BEL
+        "deb_button2/counter_11" BEL "deb_button2/counter_12" BEL
+        "deb_button2/counter_13" BEL "deb_button2/counter_14" BEL
+        "deb_button2/counter_15" BEL "deb_button2/counter_16" BEL
+        "deb_button2/counter_17" BEL "deb_button2/counter_18" BEL
+        "deb_button2/counter_19" BEL "deb_button1/counter_0" BEL
+        "deb_button1/counter_1" BEL "deb_button1/counter_2" BEL
+        "deb_button1/counter_3" BEL "deb_button1/counter_4" BEL
+        "deb_button1/counter_5" BEL "deb_button1/counter_6" BEL
+        "deb_button1/counter_7" BEL "deb_button1/counter_8" BEL
+        "deb_button1/counter_9" BEL "deb_button1/counter_10" BEL
+        "deb_button1/counter_11" BEL "deb_button1/counter_12" BEL
+        "deb_button1/counter_13" BEL "deb_button1/counter_14" BEL
+        "deb_button1/counter_15" BEL "deb_button1/counter_16" BEL
+        "deb_button1/counter_17" BEL "deb_button1/counter_18" BEL
+        "deb_button1/counter_19" BEL "deb_switch1/counter_0" BEL
+        "deb_switch1/counter_1" BEL "deb_switch1/counter_2" BEL
+        "deb_switch1/counter_3" BEL "deb_switch1/counter_4" BEL
+        "deb_switch1/counter_5" BEL "deb_switch1/counter_6" BEL
+        "deb_switch1/counter_7" BEL "deb_switch1/counter_8" BEL
+        "deb_switch1/counter_9" BEL "deb_switch1/counter_10" BEL
+        "deb_switch1/counter_11" BEL "deb_switch1/counter_12" BEL
+        "deb_switch1/counter_13" BEL "deb_switch1/counter_14" BEL
+        "deb_switch1/counter_15" BEL "deb_switch1/counter_16" BEL
+        "deb_switch1/counter_17" BEL "deb_switch1/counter_18" BEL
+        "deb_switch1/counter_19" BEL "deb_button0/counter_0" BEL
+        "deb_button0/counter_1" BEL "deb_button0/counter_2" BEL
+        "deb_button0/counter_3" BEL "deb_button0/counter_4" BEL
+        "deb_button0/counter_5" BEL "deb_button0/counter_6" BEL
+        "deb_button0/counter_7" BEL "deb_button0/counter_8" BEL
+        "deb_button0/counter_9" BEL "deb_button0/counter_10" BEL
+        "deb_button0/counter_11" BEL "deb_button0/counter_12" BEL
+        "deb_button0/counter_13" BEL "deb_button0/counter_14" BEL
+        "deb_button0/counter_15" BEL "deb_button0/counter_16" BEL
+        "deb_button0/counter_17" BEL "deb_button0/counter_18" BEL
+        "deb_button0/counter_19" BEL "deb_switch3/counter_0" BEL
+        "deb_switch3/counter_1" BEL "deb_switch3/counter_2" BEL
+        "deb_switch3/counter_3" BEL "deb_switch3/counter_4" BEL
+        "deb_switch3/counter_5" BEL "deb_switch3/counter_6" BEL
+        "deb_switch3/counter_7" BEL "deb_switch3/counter_8" BEL
+        "deb_switch3/counter_9" BEL "deb_switch3/counter_10" BEL
+        "deb_switch3/counter_11" BEL "deb_switch3/counter_12" BEL
+        "deb_switch3/counter_13" BEL "deb_switch3/counter_14" BEL
+        "deb_switch3/counter_15" BEL "deb_switch3/counter_16" BEL
+        "deb_switch3/counter_17" BEL "deb_switch3/counter_18" BEL
+        "deb_switch3/counter_19" BEL "deb_switch0/counter_0" BEL
+        "deb_switch0/counter_1" BEL "deb_switch0/counter_2" BEL
+        "deb_switch0/counter_3" BEL "deb_switch0/counter_4" BEL
+        "deb_switch0/counter_5" BEL "deb_switch0/counter_6" BEL
+        "deb_switch0/counter_7" BEL "deb_switch0/counter_8" BEL
+        "deb_switch0/counter_9" BEL "deb_switch0/counter_10" BEL
+        "deb_switch0/counter_11" BEL "deb_switch0/counter_12" BEL
+        "deb_switch0/counter_13" BEL "deb_switch0/counter_14" BEL
+        "deb_switch0/counter_15" BEL "deb_switch0/counter_16" BEL
+        "deb_switch0/counter_17" BEL "deb_switch0/counter_18" BEL
+        "deb_switch0/counter_19" BEL "deb_switch2/counter_0" BEL
+        "deb_switch2/counter_1" BEL "deb_switch2/counter_2" BEL
+        "deb_switch2/counter_3" BEL "deb_switch2/counter_4" BEL
+        "deb_switch2/counter_5" BEL "deb_switch2/counter_6" BEL
+        "deb_switch2/counter_7" BEL "deb_switch2/counter_8" BEL
+        "deb_switch2/counter_9" BEL "deb_switch2/counter_10" BEL
+        "deb_switch2/counter_11" BEL "deb_switch2/counter_12" BEL
+        "deb_switch2/counter_13" BEL "deb_switch2/counter_14" BEL
+        "deb_switch2/counter_15" BEL "deb_switch2/counter_16" BEL
+        "deb_switch2/counter_17" BEL "deb_switch2/counter_18" BEL
+        "deb_switch2/counter_19" BEL
+        "clock_generator/bufgce_clk/BUFGMUX.GCLKMUX" BEL
+        "clock_generator/bufgce_clk/BUFGMUX" BEL
+        "uart_transmitter0/read_pos_10" BEL "uart_transmitter0/read_pos_9" BEL
+        "uart_transmitter0/read_pos_8" BEL "uart_transmitter0/read_pos_7" BEL
+        "uart_transmitter0/read_pos_6" BEL "uart_transmitter0/read_pos_5" BEL
+        "uart_transmitter0/read_pos_4" BEL "uart_transmitter0/read_pos_3" BEL
+        "uart_transmitter0/read_pos_2" BEL "uart_transmitter0/read_pos_1" BEL
+        "uart_transmitter0/read_pos_0" BEL "uart_transmitter0/write_pos_10"
+        BEL "uart_transmitter0/write_pos_9" BEL
+        "uart_transmitter0/write_pos_8" BEL "uart_transmitter0/write_pos_7"
+        BEL "uart_transmitter0/write_pos_6" BEL
+        "uart_transmitter0/write_pos_5" BEL "uart_transmitter0/write_pos_4"
+        BEL "uart_transmitter0/write_pos_3" BEL
+        "uart_transmitter0/write_pos_2" BEL "uart_transmitter0/write_pos_1"
+        BEL "uart_transmitter0/write_pos_0" BEL
+        "uart_transmitter0/bit_counter_3" BEL
+        "uart_transmitter0/bit_counter_2" BEL
+        "uart_transmitter0/bit_counter_1" BEL
+        "uart_transmitter0/bit_counter_0" BEL
+        "uart_transmitter0/cycle_counter_7" BEL
+        "uart_transmitter0/cycle_counter_6" BEL
+        "uart_transmitter0/cycle_counter_5" BEL
+        "uart_transmitter0/cycle_counter_4" BEL
+        "uart_transmitter0/cycle_counter_3" BEL
+        "uart_transmitter0/cycle_counter_2" BEL
+        "uart_transmitter0/cycle_counter_1" BEL
+        "uart_transmitter0/cycle_counter_0" BEL
+        "uart_transmitter0/data_bypass_enable" BEL
+        "uart_transmitter0/shiftreg_8" BEL "uart_transmitter0/shiftreg_7" BEL
+        "uart_transmitter0/data_buffer_in_6" BEL
+        "uart_transmitter0/data_buffer_in_5" BEL
+        "uart_transmitter0/data_buffer_in_4" BEL
+        "uart_transmitter0/data_buffer_in_3" BEL
+        "uart_transmitter0/data_buffer_in_2" BEL
+        "uart_transmitter0/data_buffer_in_1" BEL
+        "uart_transmitter0/data_buffer_in_0" BEL
+        "uart_transmitter0/shiftreg_6" BEL "uart_transmitter0/shiftreg_5" BEL
+        "uart_transmitter0/shiftreg_4" BEL "uart_transmitter0/shiftreg_3" BEL
+        "uart_transmitter0/shiftreg_2" BEL "uart_transmitter0/shiftreg_1" BEL
+        "uart_transmitter0/shiftreg_0" BEL "display_driver0/digit_1" BEL
+        "display_driver0/digit_0" BEL "display_driver0/counter_13" BEL
+        "display_driver0/counter_12" BEL "display_driver0/counter_11" BEL
+        "display_driver0/counter_10" BEL "display_driver0/counter_9" BEL
+        "display_driver0/counter_8" BEL "display_driver0/counter_7" BEL
+        "display_driver0/counter_6" BEL "display_driver0/counter_5" BEL
+        "display_driver0/counter_4" BEL "display_driver0/counter_3" BEL
+        "display_driver0/counter_2" BEL "display_driver0/counter_1" BEL
+        "display_driver0/counter_0" BEL
+        "display_driver0/display_segments_reg_6" BEL
+        "display_driver0/display_segments_reg_5" BEL
+        "display_driver0/display_segments_reg_4" BEL
+        "display_driver0/display_segments_reg_3" BEL
+        "display_driver0/display_segments_reg_2" BEL
+        "display_driver0/display_segments_reg_1" BEL
+        "display_driver0/display_segments_reg_0" BEL
+        "display_driver0/display_digits_reg_0" BEL "analog_gain_0" BEL
+        "display_value0_0" BEL "display_value0_2" BEL "display_value0_3" BEL
+        "display_value3_0" BEL "display_value3_2" BEL "display_value1_0" BEL
+        "display_value1_2" BEL "display_value1_3" BEL "display_value2_0" BEL
+        "display_value2_2" BEL "display_value2_3" BEL
+        "display_driver0/display_digits_reg_3" BEL
+        "display_driver0/display_digits_reg_2" BEL
+        "display_driver0/display_digits_reg_1" BEL "uart_transmitter_data_1"
+        BEL "uart_transmitter_data_3" PIN
+        "uart_transmitter0/Mram_data_buffer.A_pins<12>" PIN
+        "uart_transmitter0/Mram_data_buffer.B_pins<12>" BEL
+        "Mshreg_test_switches_dd_0/SRL16E" BEL "test_switches_dd_0" BEL
+        "Mshreg_test_switches_dd_1/SRL16E" BEL "test_switches_dd_1" BEL
+        "Mshreg_test_switches_dd_2/SRL16E" BEL "test_switches_dd_2" BEL
+        "Mshreg_test_switches_dd_3/SRL16E" BEL "test_switches_dd_3" BEL
+        "Mshreg_test_buttons_dd_0/SRL16E" BEL "test_buttons_dd_0" BEL
+        "Mshreg_test_buttons_dd_1/SRL16E" BEL "test_buttons_dd_1" BEL
+        "Mshreg_test_buttons_dd_2/SRL16E" BEL "test_buttons_dd_2" BEL
+        "Mshreg_test_buttons_dd_3/SRL16E" BEL "test_buttons_dd_3" BEL
+        "Mshreg_analog_comp_dd_0/SRL16E" BEL "analog_comp_dd_0" BEL
+        "Mshreg_analog_comp_dd_1/SRL16E" BEL "analog_comp_dd_1" BEL
+        "Mshreg_analog_comp_dd_2/SRL16E" BEL "analog_comp_dd_2" BEL
+        "Mshreg_analog_comp_dd_3/SRL16E" BEL "analog_comp_dd_3" BEL
+        "clock_generator/Mshreg_enable_3/SRL16E" BEL
+        "clock_generator/enable_3" BEL "Mshreg_analog_comp_dd_4/SRL16E" BEL
+        "analog_comp_dd_4" BEL "Mshreg_analog_comp_dd_5/SRL16E" BEL
+        "analog_comp_dd_5";
+TS_clk_ext = PERIOD TIMEGRP "clk_ext" 50 ns HIGH 50%;
+SCHEMATIC END;
+

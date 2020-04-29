@@ -1,0 +1,63 @@
+# UCF file for DCF77 based on Dragon FPGA 
+# Target : Spartan3e-250e-tq144-4
+
+######## Clock ########
+NET "clk_ext" LOC = "P125"; # main clock
+NET "clk_ext" TNM_NET = "clk_ext"; # time spec 20 MHz
+TIMESPEC "TS_clk_ext" = PERIOD "clk_ext" 50 ns HIGH 50 %; 
+
+######## DIP switches ########
+NET "test_switches<0>" LOC = "P84 " | IOSTANDARD=LVCMOS33; # DIP switch 1
+NET "test_switches<1>" LOC = "P78 " | IOSTANDARD=LVCMOS33; # DIP switch 2
+NET "test_switches<2>" LOC = "P69 " | IOSTANDARD=LVCMOS33; # DIP switch 3
+NET "test_switches<3>" LOC = "P56 " | IOSTANDARD=LVCMOS33; # DIP switch 4
+
+######## Push Buttons ########
+NET "test_buttons<0>" LOC = "P107" | IOSTANDARD=LVCMOS33; # push button 1
+NET "test_buttons<1>" LOC = "P101" | IOSTANDARD=LVCMOS33; # push button 2
+NET "test_buttons<2>" LOC = "P95"  | IOSTANDARD=LVCMOS33; # push button 3
+NET "test_buttons<3>" LOC = "P89"  | IOSTANDARD=LVCMOS33; # push button 4
+
+######## LEDs ########
+NET "test_leds<0>" LOC = "P140" | IOSTANDARD=LVCMOS33;
+NET "test_leds<1>" LOC = "P139" | IOSTANDARD=LVCMOS33;
+NET "test_leds<2>" LOC = "P135" | IOSTANDARD=LVCMOS33;
+NET "test_leds<3>" LOC = "P134" | IOSTANDARD=LVCMOS33;
+NET "test_leds<4>" LOC = "P132" | IOSTANDARD=LVCMOS33;
+NET "test_leds<5>" LOC = "P131" | IOSTANDARD=LVCMOS33;
+NET "test_leds<6>" LOC = "P130" | IOSTANDARD=LVCMOS33;
+NET "test_leds<7>" LOC = "P124" | IOSTANDARD=LVCMOS33;
+
+######## FTDI USB UART ########
+NET "uart_rx"      LOC = "P6"  | IOSTANDARD=LVCMOS33; # RX = data input              --> FT232 TXD
+NET "uart_tx"      LOC = "P2"  | IOSTANDARD=LVCMOS33; # TX = data output             --> FT232 RXD
+NET "uart_rts_bar" LOC = "P3"  | IOSTANDARD=LVCMOS33; # RTS = request-to-send output --> FT232 CTS bar
+NET "uart_cts_bar" LOC = "P10" | IOSTANDARD=LVCMOS33; # CTS = clear-to-send input    --> FT232 RTS bar
+
+######## Display ########
+NET "display_digits<0>"   LOC = "P33" | IOSTANDARD=LVCMOS33; # A10
+NET "display_digits<1>"   LOC = "P31" | IOSTANDARD=LVCMOS33; # A9
+NET "display_digits<2>"   LOC = "P25" | IOSTANDARD=LVCMOS33; # A8
+NET "display_digits<3>"   LOC = "P22" | IOSTANDARD=LVCMOS33; # A7
+NET "display_segments<0>" LOC = "P74" | IOSTANDARD=LVCMOS33; # C13
+NET "display_segments<1>" LOC = "P68" | IOSTANDARD=LVCMOS33; # C12
+NET "display_segments<2>" LOC = "P39" | IOSTANDARD=LVCMOS33; # C11
+NET "display_segments<3>" LOC = "P34" | IOSTANDARD=LVCMOS33; # C10 
+NET "display_segments<4>" LOC = "P32" | IOSTANDARD=LVCMOS33; # C9
+NET "display_segments<5>" LOC = "P26" | IOSTANDARD=LVCMOS33; # C8
+NET "display_segments<6>" LOC = "P23" | IOSTANDARD=LVCMOS33; # C7
+NET "display_colon"       LOC = "P76" | IOSTANDARD=LVCMOS33; # C14
+
+######## Analog ########
+NET "analog_gain<0>" LOC = "P14"  | IOSTANDARD=LVCMOS33; # A4
+NET "analog_gain<1>" LOC = "P16"  | IOSTANDARD=LVCMOS33; # A5
+NET "analog_gain<2>" LOC = "P20"  | IOSTANDARD=LVCMOS33; # A6
+NET "analog_gain<3>" LOC = "P15"  | IOSTANDARD=LVCMOS33; # C4
+NET "analog_gain<4>" LOC = "P17"  | IOSTANDARD=LVCMOS33; # C5
+NET "analog_gain<5>" LOC = "P21"  | IOSTANDARD=LVCMOS33; # C6
+NET "analog_comp<0>" LOC = "P96"  | IOSTANDARD=LVCMOS33; # A25
+NET "analog_comp<1>" LOC = "P104" | IOSTANDARD=LVCMOS33; # A23
+NET "analog_comp<2>" LOC = "P98"  | IOSTANDARD=LVCMOS33; # A22
+NET "analog_comp<3>" LOC = "P97"  | IOSTANDARD=LVCMOS33; # C25
+NET "analog_comp<4>" LOC = "P105" | IOSTANDARD=LVCMOS33; # C23
+NET "analog_comp<5>" LOC = "P103" | IOSTANDARD=LVCMOS33; # C22

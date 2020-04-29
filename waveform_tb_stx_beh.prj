@@ -1,0 +1,2 @@
+vhdl isim_temp "waveform_tb.vhd"
+verilog isim_temp "/esat/micas-data/software/xilinx_ise_14.7/ISE//verilog/src/glbl.v"
