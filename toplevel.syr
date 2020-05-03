@@ -384,3 +384,85 @@ Optimizing unit <toplevel> ...
 Optimizing unit <uart_transmitter> ...
 
 Optimizing unit <display_driver> ...
+WARNING:Xst:1710 - FF/Latch <uart_transmitter0/data_buffer_in_7> (without init value) has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block toplevel, actual ratio is 10.
+
+Final Macro Processing ...
+
+Processing Unit <toplevel> :
+	Found 2-bit shift register for signal <test_switches_dd_0>.
+	Found 2-bit shift register for signal <test_switches_dd_1>.
+	Found 2-bit shift register for signal <test_switches_dd_2>.
+	Found 2-bit shift register for signal <test_switches_dd_3>.
+	Found 2-bit shift register for signal <test_buttons_dd_0>.
+	Found 2-bit shift register for signal <test_buttons_dd_1>.
+	Found 2-bit shift register for signal <test_buttons_dd_2>.
+	Found 2-bit shift register for signal <test_buttons_dd_3>.
+	Found 2-bit shift register for signal <analog_comp_dd_0>.
+	Found 2-bit shift register for signal <analog_comp_dd_1>.
+	Found 2-bit shift register for signal <analog_comp_dd_2>.
+	Found 2-bit shift register for signal <analog_comp_dd_3>.
+	Found 2-bit shift register for signal <analog_comp_dd_4>.
+	Found 2-bit shift register for signal <analog_comp_dd_5>.
+	Found 4-bit shift register for signal <clock_generator/enable_3>.
+Unit <toplevel> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 318
+ Flip-Flops                                            : 318
+# Shift Registers                                      : 15
+ 2-bit shift register                                  : 14
+ 4-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : toplevel.ngr
+Top Level Output File Name         : toplevel
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 45
+
+Cell Usage :
+# BELS                             : 996
+#      GND                         : 1
+#      INV                         : 19
+#      LUT1                        : 228
+#      LUT2                        : 15
+#      LUT2_L                      : 2
+#      LUT3                        : 36
+#      LUT3_D                      : 4
+#      LUT3_L                      : 3
+#      LUT4                        : 121
+#      LUT4_D                      : 7
+#      LUT4_L                      : 4
+#      MUXCY                       : 280
+#      MUXF5                       : 27
+#      MUXF6                       : 7
+#      VCC                         : 1
+#      XORCY                       : 241
+# FlipFlops/Latches                : 333
+#      FD                  

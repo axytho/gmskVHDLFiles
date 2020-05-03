@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line:
 /esat/micas-data/software/xilinx_ise_14.7/ISE/bin/lin64/unwrapped/ngdbuild
--intstyle ise -dd _ngo -nt timestamp -uc dcf77.ucf -p xc3s250e-tq144-4
+-intstyle ise -dd _ngo -nt timestamp -uc dcf77.ucf -p xc3s250e-vq100-5
 toplevel.ngc toplevel.ngd
 
 Reading NGO file
@@ -30,10 +30,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 494128 kilobytes
+Total memory usage is 494400 kilobytes
 
 Writing NGD file "toplevel.ngd" ...
-Total REAL time to NGDBUILD completion:  4 sec
-Total CPU time to NGDBUILD completion:   3 sec
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   4 sec
 
 Writing NGDBUILD log file "toplevel.bld"...

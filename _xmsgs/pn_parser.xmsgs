@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/full_simulation_tb.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/top_counter_tb.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

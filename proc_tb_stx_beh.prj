@@ -1,0 +1,4 @@
+vhdl isim_temp "p2r_cordicPipe.vhd"
+vhdl isim_temp "p2r_cordic.vhd"
+vhdl isim_temp "sc_corproc.vhd"
+vhdl isim_temp "proc_tb.vhd"

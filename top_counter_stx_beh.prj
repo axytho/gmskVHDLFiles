@@ -1,0 +1,8 @@
+vhdl isim_temp "atan_cordic.vhd"
+vhdl isim_temp "rising_edge.vhd"
+vhdl isim_temp "low_pass_filter_22.vhd"
+vhdl isim_temp "difference_and_invert.vhd"
+vhdl isim_temp "atan_cordic_full_circle.vhd"
+vhdl isim_temp "full_simulation.vhd"
+vhdl isim_temp "counter.vhd"
+vhdl isim_temp "top_counter.vhd"

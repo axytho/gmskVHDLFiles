@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/users/students/r0666113/Documents/gmsk100-digital/xilinx/vhdlGroup4FirstRun/testbench_isim_beh1.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/testbench/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/input_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">input_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/input_q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input_q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">input_q[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/newvalue" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">newvalue</obj_property>
+      <obj_property name="ObjectShortName">newvalue</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/done_symbol" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">done_symbol</obj_property>
+      <obj_property name="ObjectShortName">done_symbol</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/output_value" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">output_value</obj_property>
+      <obj_property name="ObjectShortName">output_value</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/counterDataSync/newvalue" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">newvalue</obj_property>
+      <obj_property name="ObjectShortName">newvalue</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/counterDataSync/datainput" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datainput[7:0]</obj_property>
+      <obj_property name="ObjectShortName">datainput[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/counterDataSync/done_symbol" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">done_symbol</obj_property>
+      <obj_property name="ObjectShortName">done_symbol</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/counterDataSync/output_value" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">output_value</obj_property>
+      <obj_property name="ObjectShortName">output_value</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/counterDataSync/cnt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/counterDataSync/count0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count0[6:0]</obj_property>
+      <obj_property name="ObjectShortName">count0[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/counterDataSync/count1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count1[6:0]</obj_property>
+      <obj_property name="ObjectShortName">count1[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/counterDataSync/countminusfifty" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">countminusfifty[6:0]</obj_property>
+      <obj_property name="ObjectShortName">countminusfifty[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/counterDataSync/countminustwentyfive" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">countminustwentyfive[6:0]</obj_property>
+      <obj_property name="ObjectShortName">countminustwentyfive[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/counterDataSync/count0minusfive" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count0minusfive[6:0]</obj_property>
+      <obj_property name="ObjectShortName">count0minusfive[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/counterDataSync/count1minusfive" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count1minusfive[6:0]</obj_property>
+      <obj_property name="ObjectShortName">count1minusfive[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/counterDataSync/count1minuscount0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count1minuscount0[6:0]</obj_property>
+      <obj_property name="ObjectShortName">count1minuscount0[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/counterDataSync/countadder" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">countadder[2:0]</obj_property>
+      <obj_property name="ObjectShortName">countadder[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/counterDataSync/count0_add" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count0_add[1:0]</obj_property>
+      <obj_property name="ObjectShortName">count0_add[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/counterDataSync/count1_add" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count1_add[1:0]</obj_property>
+      <obj_property name="ObjectShortName">count1_add[1:0]</obj_property>
+   </wvobject>
+</wave_config>
